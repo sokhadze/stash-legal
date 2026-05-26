@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stash — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the Stash Chrome extension. Everything stays on your device." />
+  <style>
+    :root {
+      --bg: #14110d;
+      --bg-glow: #2a2016;
+      --text: #f2ece1;
+      --muted: #a59c8e;
+      --faint: #6a6258;
+      --accent: #e0a458;
+      --accent-soft: rgba(224, 164, 88, 0.18);
+      --border: rgba(255, 255, 255, 0.08);
+      --serif: 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(900px 600px at 50% -10%, var(--bg-glow) 0%, transparent 60%),
+        radial-gradient(1200px 800px at 85% 110%, rgba(224, 164, 88, 0.06) 0%, transparent 55%),
+        var(--bg);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 28px 100px;
+    }
+    header { margin-bottom: 48px; }
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--text);
+      font-family: var(--serif); font-size: 22px;
+    }
+    .brand .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent); box-shadow: 0 0 14px var(--accent);
+    }
+    h1 {
+      font-family: var(--serif); font-weight: 400;
+      font-size: clamp(34px, 5vw, 48px);
+      letter-spacing: -0.015em;
+      margin-top: 28px;
+    }
+    .meta {
+      color: var(--faint);
+      font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
+      margin-top: 12px;
+    }
+    h2 {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 22px;
+      margin-top: 44px; margin-bottom: 12px;
+      color: var(--text);
+    }
+    p, li {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+    .lead {
+      font-size: 17px;
+      color: var(--muted);
+      font-family: var(--serif);
+      font-style: italic;
+      margin-top: 22px;
+    }
+    ul { padding-left: 22px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; }
+    code {
+      font-family: ui-monospace, SF Mono, Menlo, monospace;
+      font-size: 13.5px;
+      background: rgba(255,255,255,0.06);
+      padding: 2px 7px; border-radius: 5px;
+      color: var(--accent);
+    }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed var(--accent-soft); }
+    a:hover { border-bottom-style: solid; }
+    .perm {
+      border-left: 2px solid var(--accent-soft);
+      padding: 12px 18px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+    }
+    .perm strong { color: var(--accent); font-family: ui-monospace, monospace; font-weight: 600; }
+    .perm p { font-size: 14px; margin-bottom: 0; color: var(--muted); }
+    footer {
+      margin-top: 80px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      color: var(--faint);
+      font-size: 13px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      text-align: center;
+    }
+    @media (max-width: 560px) {
+      .wrap { padding: 56px 22px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <a href="#" class="brand"><span class="dot" aria-hidden="true"></span>Stash</a>
+      <h1>Privacy Policy</h1>
+      <div class="meta">Last updated · May 25, 2026</div>
+    </header>
+
+    <p class="lead">Stash is built on a simple principle: your data is yours. Nothing leaves your device unless you explicitly enable a feature that requires it.</p>
+
+    <h2>What Stash stores</h2>
+    <p>Stash is a Chrome extension that replaces your new tab page. Everything you create in Stash — links, notes, habits, focus history, settings, workspaces, themes — is stored locally on your device using Chrome's <code>chrome.storage.local</code> API.</p>
+    <p>No account is required. No data is uploaded to any server operated by the developer of Stash or any third party. If you uninstall Stash, your data is removed with it. You can export a JSON backup of everything from the settings panel at any time.</p>
+
+    <h2>Permissions and what they're used for</h2>
+    <p>Stash requests the following Chrome permissions, each used solely on your device:</p>
+
+    <div class="perm">
+      <strong>storage</strong>
+      <p>Saves your links, notes, habits, and preferences locally. No external storage is used.</p>
+    </div>
+
+    <div class="perm">
+      <strong>favicon</strong>
+      <p>Requests favicons (small site icons) through Chrome's local favicon service so saved links display the correct icon. No request leaves your computer.</p>
+    </div>
+
+    <div class="perm">
+      <strong>topSites</strong>
+      <p>Optional. When the "Top sites" section is enabled, Stash reads your most-visited Chrome sites locally to display them on the new tab. This data is never transmitted.</p>
+    </div>
+
+    <div class="perm">
+      <strong>bookmarks</strong>
+      <p>Optional. When you use the command palette (Cmd/Ctrl + K), Stash queries your Chrome bookmarks locally so you can find them quickly. No bookmark data is transmitted.</p>
+    </div>
+
+    <div class="perm">
+      <strong>sessions</strong>
+      <p>Optional. When the "Recently closed tabs" section is enabled, Stash uses Chrome's sessions API locally to list tabs you've recently closed so you can restore them. No data is transmitted.</p>
+    </div>
+
+    <div class="perm">
+      <strong>tabs</strong>
+      <p>Used only by the toolbar popup. When you click the Stash icon in your Chrome toolbar to save the current page, Stash reads the active tab's URL and title to pre-fill the save form. The popup never reads other tabs and never transmits data.</p>
+    </div>
+
+    <h2>The one outbound request</h2>
+    <p>If you enable the optional <strong>Weather</strong> widget in settings, Stash sends your configured city's geographic coordinates to <a href="https://open-meteo.com" target="_blank" rel="noopener">api.open-meteo.com</a> to retrieve the current temperature and weather condition. Open-Meteo is a free public weather API that does not require an account or API key.</p>
+    <p>This is the only external network request Stash will ever make. It only runs when the weather widget is on, refreshes at most once every 30 minutes, and is disabled by default. If you don't turn on the weather widget, Stash makes no network requests at all.</p>
+
+    <h2>What Stash does not do</h2>
+    <ul>
+      <li>No analytics, telemetry, or usage tracking of any kind.</li>
+      <li>No advertisements.</li>
+      <li>No third-party integrations beyond Open-Meteo (for weather, only if enabled).</li>
+      <li>No accounts, no sign-in, no email collection.</li>
+      <li>No syncing across devices through a Stash server (you can move data manually with JSON export and import).</li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>Stash does not collect personal information from anyone, including children under 13.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes — for example, if a new feature requires a new permission or network request — the change will be reflected here and the "Last updated" date above will be revised. Material changes will also be noted in the extension's update changelog.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns about privacy in Stash? Reach out to <a href="mailto:Lerisokhadze@gmail.com">Lerisokhadze@gmail.com</a>.</p>
+
+    <footer>
+      Stash · <span id="ver">v1.2.0</span> · made with care · all data stays on your device
+    </footer>
+  </main>
+
+  <script>
+    // If this page is co-hosted with manifest.json, pull the live version automatically.
+    fetch('./manifest.json')
+      .then((r) => r.ok ? r.json() : null)
+      .then((m) => { if (m && m.version) document.getElementById('ver').textContent = 'v' + m.version; })
+      .catch(() => {});
+  </script>
+</body>
+</html>
