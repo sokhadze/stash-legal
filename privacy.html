@@ -156,6 +156,16 @@
       <p>Used only by the toolbar popup. When you click the Stash icon in your Chrome toolbar to save the current page, Stash reads the active tab's URL and title to pre-fill the save form. The popup never reads other tabs and never transmits data.</p>
     </div>
 
+    <div class="perm">
+      <strong>alarms</strong>
+      <p>Used by the background focus (Pomodoro) timer to know when a work or break phase ends, so the timer keeps working even when the new tab is closed. The alarm is a local scheduling primitive — no data is sent anywhere.</p>
+    </div>
+
+    <div class="perm">
+      <strong>notifications</strong>
+      <p>Shows a desktop notification ("Focus session complete" / "Break over") when a Pomodoro phase ends and the new tab page isn't open. The notification stays silent if the new tab is already showing, so you don't get a double alert. Used only for the focus timer.</p>
+    </div>
+
     <h2>The one outbound request</h2>
     <p>If you enable the optional <strong>Weather</strong> widget in settings, Stash sends your configured city's geographic coordinates to <a href="https://open-meteo.com" target="_blank" rel="noopener">api.open-meteo.com</a> to retrieve the current temperature and weather condition. Open-Meteo is a free public weather API that does not require an account or API key.</p>
     <p>This is the only external network request Stash will ever make. It only runs when the weather widget is on, refreshes at most once every 30 minutes, and is disabled by default. If you don't turn on the weather widget, Stash makes no network requests at all.</p>
@@ -179,7 +189,7 @@
     <p>Questions or concerns about privacy in Stash? Reach out to <a href="mailto:Lerisokhadze@gmail.com">Lerisokhadze@gmail.com</a>.</p>
 
     <footer>
-      Stash · <span id="ver">v1.4.0</span> · made with care · all data stays on your device
+      Stash · <span id="ver">v1.5.0</span> · made with care · all data stays on your device
     </footer>
   </main>
 
