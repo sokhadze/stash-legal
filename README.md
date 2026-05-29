@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="icons/icon128.png" alt="Stash" width="96" height="96" />
+<img src="icon128.png" alt="Stash" width="96" height="96" />
 
 # Stash — New Tab
 
@@ -22,7 +22,7 @@ Links, folders, notes, habits, a focus timer, weather, a command palette, and wo
 
 <br />
 
-![Stash banner](store_assets/marquee_1400x560.png)
+![Stash banner](marquee_1400x560.png)
 
 </div>
 
